@@ -3,14 +3,13 @@
 using namespace std;
 int main() 
 {   //Declaring Variables
-    int x,x1,x2,y,y1,y2;
-    float dis;
+    double x,x1,x2,y,y1,y2,dis;
     //Asking User for Values
     cout<<"Please Enter Value of x1 & x2 & y1 & y2 respectively\n";
     cin>>x1>>x2>>y1>>y2;
     x=x2-x1;
-    x=pow(x,2);
     y=y2-y1;
+    x=pow(x,2);
     y=pow(y,2);
     dis=sqrt(x+y);
     cout<<"Distance Between Two Points = "<<dis;
