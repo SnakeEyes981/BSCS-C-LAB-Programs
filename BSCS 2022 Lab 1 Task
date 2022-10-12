@@ -4,13 +4,17 @@ using namespace std;
 int main() 
 {   //Declaring Variables
     double x,x1,x2,y,y1,y2,dis;
+    cout<<"Program to Find out Distance b/w Two Points"<<endl;
     //Asking User for Values
     cout<<"Please Enter Value of x1 & x2 & y1 & y2 respectively\n";
     cin>>x1>>x2>>y1>>y2;
+    //Solving According to Formula i.e Distance=√(x2-x1)^2+(y2-y1)^2.
     x=x2-x1;
     y=y2-y1;
+    
     x=pow(x,2);
     y=pow(y,2);
+    
     dis=sqrt(x+y);
     cout<<"Distance Between Two Points = "<<dis;
     return 0;
